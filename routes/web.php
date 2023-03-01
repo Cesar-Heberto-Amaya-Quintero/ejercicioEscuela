@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/alumnos', [AlumnosController::class, "index"])->name('alumnos.index');
+
+//Create - Formulario de creación
+Route::get('/alumnos/create', [AlumnosController::class, "create"])->name('alumnos.create');
+//Store - almacenar un nuevo registro
+Route::post('/alumnos', [AlumnosController::class, "store"])->name('alumnos.store');

@@ -20,7 +20,7 @@
                 <tr>
                     <td>{{$alumno->nombre}}</td>
                     <td>
-                        <button>Editar</button>
+                        <a href="{{route('alumnos.edit', $alumno->id)}}">Editar</a>
                         <button>Eliminar</button>
                     </td>
                 </tr>

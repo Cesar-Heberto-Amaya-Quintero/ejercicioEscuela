@@ -33,3 +33,5 @@ Route::get('/alumnos/{id}/delete', [AlumnosController::class, 'delete'])->name('
 
 Route::delete('/alumnos/{id}', [AlumnosController::class, 'destroy'])->name('alumnos.destroy');
 
+Route::get('/prueba', [AlumnosController::class, 'prueba'])->name('alumnos.prueba');
+

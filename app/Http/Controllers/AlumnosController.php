@@ -63,4 +63,8 @@ class AlumnosController extends Controller
         $alumno->delete();
         return redirect()->route('alumnos.index')->with('exito', $feedback);
     }
+
+    public function prueba() {
+        return view('prueba'); 
+    }
 }
